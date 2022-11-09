@@ -6,6 +6,21 @@ Created on Mon Aug  1 13:49:13 2022
 """
 # s = input("Give string: ")
 
+'''this code takes a string s and finds the longest alphabetically ordered substring within
+the code
+
+my main problems creating the code previously was iterating through the whole string
+reliably, so i decided to iterate over each character individually
+
+storage of all values in a dictionary could be optimised into a single maximum value
+where the longest length of substring func is compared against a stored maximum
+
+I think the code should have just under O(n**2) complexity in the worst case because the each element
+of the string is looped over within a for loop but previous characters are removed
+so the string at each point is one element shorter 
+worst case where the whole string is alphabetically ordered:
+    n*(n,n-1,n-2,n-3 --> 0) first runthrough'''
+
 def Substring(string):
     '''
     where string is a string
